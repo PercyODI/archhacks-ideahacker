@@ -14,7 +14,7 @@
         vm.idea = idea;
         vm.title = "Idea Detail: " + vm.idea.name;
         
-        vm.idea.skillsNeeded = vm.idea.skillsNeeded.toString();
+        vm.idea.skillsNeeded = vm.idea.skillsNeeded ? vm.idea.skillsNeeded.toString() : "No Skills Listed";
         
         
     }

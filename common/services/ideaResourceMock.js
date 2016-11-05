@@ -54,6 +54,24 @@
             return [200, idea, {}];
         })
         
+        $httpBackend.whenPOST(ideaUrl).respond(function (method, url, data) {
+            var idea = angular.fromJson(data);
+            
+            if(!idea.ideaId) {
+                idea.ideaId = ideas[ideas.length - 1].ideaId + 1;
+                ideas.push(idea);
+            } else {
+                for (var i = 0; i < ideas.length; i++) {
+                    if (ideas[i].ideaId == idea.ideaId) {
+                        ideas[i] = idea;
+                        break;
+                    }
+                }
+            }
+            
+            return [200, idea, {}];
+        })
+        
         $httpBackend.whenGET(/app/).passThrough();
     });
 }());
