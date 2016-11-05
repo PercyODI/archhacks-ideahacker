@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    
+    <!--StyleSheets-->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/toastr.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    
+    <!--Library Scripts-->
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="lib/angular-resource.js"></script>
+    <script src="lib/angular-mocks.js"></script>
+    <script type="text/javascript" src="lib/jquery.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.js"></script>
+    <script type="text/javascript" src="lib/toastr.js"></script>
+    
+    <!--Application Script-->
+    <script src="app/app.js"></script>
+    
+    <!--Services-->
+    <script src="common/services/common.services.js"></script>
+    <script src="common/services/ideaResource.js"></script>
+    <script src="common/services/ideaResourceMock.js"></script>
+    
+    <!--Controllers-->
+    <script src="app/ideas/ideasListController.js"></script>
+    <script src="app/ideas/ideaDetailController.js"></script>
+    
+</head>
+<body ng-app="ideaHackerApp">
+<div class="container">
+<h2 class="jumbotron text-center">ideaHacker</h2>
+    <div ui-view></div>
+</div>
+</body>
+</html>
