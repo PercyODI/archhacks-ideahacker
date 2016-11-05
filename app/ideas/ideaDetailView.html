@@ -1,12 +1,60 @@
-Idea Id: {{vm.idea.ideaId}}
-<br>
-Name: {{vm.idea.name}}
-<br>
-Description: {{vm.idea.description}}
-<br>
-Skills Needed: {{vm.idea.skillsNeeded}}
-<br>
-Subject: {{vm.idea.subject}}
-<br>
-Difficulty: {{vm.idea.difficulty}}
+<dir class="container-fluid">
+    <dir class="row">
+        <dir class="col-xs-2 col-xs-offset-2 text-right">
+            <strong class="">Idea Id:</strong>
+        </dir>
+        <dir class="col-xs-6">
+            {{vm.idea.ideaId}}
+        </dir>
+    </dir>
 
+    <dir class="row">
+        <dir class="col-xs-2 col-xs-offset-2 text-right">
+            <strong class="">Name:</strong>
+        </dir>
+        <dir class="col-xs-6">
+            {{vm.idea.name}}
+        </dir>
+    </dir>
+
+    <dir class="row">
+        <dir class="col-xs-2 col-xs-offset-2 text-right">
+            <strong class="">Description:</strong>
+        </dir>
+        <dir class="col-xs-6">
+            {{vm.idea.description}}
+        </dir>
+    </dir>
+
+    <dir class="row">
+        <dir class="col-xs-2 col-xs-offset-2 text-right">
+            <strong class="">Skills Needed:</strong>
+        </dir>
+        <dir class="col-xs-6">
+            {{vm.idea.skillsNeeded}}
+        </dir>
+    </dir>
+
+    <dir class="row">
+        <dir class="col-xs-2 col-xs-offset-2 text-right">
+            <strong class="">Subject:</strong>
+        </dir>
+        <dir class="col-xs-6">
+            {{vm.idea.subject}}
+        </dir>
+    </dir>
+
+    <dir class="row">
+        <dir class="col-xs-2 col-xs-offset-2 text-right">
+            <strong class="">Difficulty:</strong>
+        </dir>
+        <dir class="col-xs-6">
+            {{vm.idea.difficulty}}
+        </dir>
+    </dir>
+    <dir class="row">
+        <dir class="col-xs-8 col-xs-offset-2 text-right">
+            <strong class=""><button class="btn btn-primary btn-block" ui-sref="ideaEdit({ideaId: vm.idea.ideaId})">Edit Me</button></strong>
+        </dir>
+    </dir>
+</dir>

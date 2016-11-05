@@ -10,7 +10,6 @@
         ]);
 
     function ideaEditController(idea, $state) {
-        console.dir(idea);
         var vm = this;
         vm.idea = idea;
 
