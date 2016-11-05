@@ -51,5 +51,11 @@
                     }
                 }
             })
+            // User States
+            .state("userLogin", {
+                url: "/users/login",
+                templateUrl: "app/users/userLogin.html",
+                controller: "userLoginController as vm"
+            })
     }])
 }());
